@@ -1,4 +1,182 @@
-Welcome to jenkins 
-------------------
-You are successfully hosted the nginx-website!
------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Demo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #1f2937;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #dbeafe;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 28px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .container h2 {
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #2563eb;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #1f2937;
+            color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>DevOps Demo</h2>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to My DevOps Website</h1>
+
+    <p>
+        This website is automatically deployed using
+        Jenkins and Nginx.
+    </p>
+
+    <a href="#services" class="button">Explore More</a>
+</section>
+
+<section class="container" id="services">
+
+    <h2>DevOps Technology Stack</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Git & GitHub</h3>
+            <p>
+                Source code is maintained and version controlled
+                using Git and GitHub.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Jenkins</h3>
+            <p>
+                Jenkins automatically pulls the latest code
+                and deploys the application.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Nginx</h3>
+            <p>
+                Nginx serves this website to users as a
+                high-performance web server.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>AWS</h3>
+            <p>
+                The application can be hosted and deployed
+                on scalable cloud infrastructure.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 DevOps Demo | Jenkins → GitHub → Nginx
+</footer>
+
+</body>
+</html>
