@@ -3,108 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps DEMO</title>
+    <title>Jenkins CI/CD Test</title>
 
     <style>
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         body {
             font-family: Arial, sans-serif;
             background: #f4f7fb;
             color: #222;
+            text-align: center;
         }
 
         header {
             background: #1f2937;
-            color: cyan;
-            padding: 20px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            color: white;
+            padding: 25px;
         }
 
-        header h2 {
+        header h1 {
             color: #38bdf8;
         }
 
-        nav a {
-            color: yellow;
-            text-decoration: none;
-            margin-left: 25px;
-        }
-
         .hero {
-            text-align: center;
-            padding: 100px 20px;
-            background: linear-gradient(135deg, #0f172a, #1e3a8a);
-            color: white;
+            padding: 80px 20px;
         }
 
-        .hero h1 {
-            font-size: 48px;
+        .hero h2 {
+            font-size: 42px;
             margin-bottom: 20px;
         }
 
         .hero p {
             font-size: 20px;
-            color: #dbeafe;
+            color: #555;
         }
 
-        .button {
+        .status {
             display: inline-block;
             margin-top: 30px;
-            padding: 14px 28px;
-            background: #38bdf8;
-            color: #0f172a;
-            text-decoration: none;
-            border-radius: 6px;
+            padding: 15px 30px;
+            background: #16a34a;
+            color: white;
+            border-radius: 8px;
             font-weight: bold;
         }
 
-        .container {
-            padding: 60px 8%;
-            text-align: center;
-        }
-
-        .container h2 {
-            margin-bottom: 40px;
-            font-size: 32px;
-        }
-
-        .cards {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background: red;
-            width: 250px;
-            padding: 30px 20px;
+        .info {
+            margin: 30px auto;
+            max-width: 600px;
+            background: white;
+            padding: 30px;
             border-radius: 10px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
 
-        .card h3 {
-            margin-bottom: 15px;
-            color: #2563eb;
-        }
-
-        .card p {
-            color: #666;
-            line-height: 1.6;
+        .info p {
+            margin: 12px;
         }
 
         footer {
-            text-align: center;
-            padding: 25px;
+            margin-top: 50px;
+            padding: 20px;
             background: #1f2937;
-            color: #ddd;
+            color: white;
         }
     </style>
 </head>
@@ -112,70 +78,41 @@
 <body>
 
 <header>
-    <h2>DEVOPS Demo</h2>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-    </nav>
+    <h1>Jenkins CI/CD Demo</h1>
 </header>
 
 <section class="hero">
-    <h1>Welcome to My DevOps Website</h1>
+
+    <h2>🚀 Deployment Successful!</h2>
 
     <p>
-        This website is automatically deployed using
-        Jenkins and Nginx.
+        This website is deployed automatically using Jenkins.
     </p>
 
-    <a href="#services" class="button">Explore More</a>
-</section>
-
-<section class="container" id="services">
-
-    <h2>DEVOPS Technology Stack</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>Git & GitHub</h3>
-            <p>
-                Source code is maintained and version controlled
-                using Git and GitHub.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Jenkins</h3>
-            <p>
-                Jenkins automatically pulls the latest code
-                and deploys the application.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Nginx</h3>
-            <p>
-                Nginx serves this website to users as a
-                high-performance web server.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>AWS</h3>
-            <p>
-                The application can be hosted and deployed
-                on scalable cloud infrastructure.
-            </p>
-        </div>
-
+    <div class="status">
+        BUILD & DEPLOYMENT: SUCCESS
     </div>
 
 </section>
 
+<div class="info">
+
+    <h2>CI/CD Pipeline</h2>
+
+    <p><strong>Source:</strong> GitHub</p>
+
+    <p><strong>CI/CD:</strong> Jenkins</p>
+
+    <p><strong>Server:</strong> Amazon Linux</p>
+
+    <p><strong>Web Server:</strong> Nginx</p>
+
+    <p><strong>Trigger:</strong> GitHub Webhook</p>
+
+</div>
+
 <footer>
-    © 2026 DevOps Demo | Jenkins → GitHub → Nginx
+    Jenkins → GitHub → Amazon Linux → Nginx
 </footer>
 
 </body>
